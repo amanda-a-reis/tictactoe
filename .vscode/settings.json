@@ -1,0 +1,5 @@
+{
+  "code-runner.executorMap": {
+    "typescript": "NODE_ENV=dev npx ts-node -r tsconfig-paths/register --files --transpile-only"
+  }
+}

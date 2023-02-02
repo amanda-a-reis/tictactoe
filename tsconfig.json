@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "target": "ES2019",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "paths": {
+      "@main/*": ["src/main/*"],
+      "@test/*": ["src/test/*"]
+    }
+  }
+}
