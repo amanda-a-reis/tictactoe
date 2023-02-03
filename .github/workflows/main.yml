@@ -11,6 +11,9 @@ jobs:
     name: Run action
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - uses: actions/checkout@v2
 
@@ -26,3 +29,8 @@ jobs:
  
       - name: Run tests
         run: npm run test:ci
+
+      - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
