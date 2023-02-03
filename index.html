@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello TicTacToe</h1>
-    <button class="button-test">Clique aqui</button>
-    <script type="module" src="./dist/index.js"></script>
+    <div class="board">
+        <button class="board-button-1" onclick="chooseButton('button1')"></button>
+        <button class="board-button-2" onclick="chooseButton('button2')"></button>
+        <button class="board-button-3" onclick="chooseButton('button3')"></button>
+        <button class="board-button-4" onclick="chooseButton('button4')"></button>
+        <button class="board-button-5" onclick="chooseButton('button5')"></button>
+        <button class="board-button-6" onclick="chooseButton('button6')"></button>
+        <button class="board-button-7" onclick="chooseButton('button7')"></button>
+        <button class="board-button-8" onclick="chooseButton('button8')"></button>
+        <button class="board-button-9" onclick="chooseButton('button9')"></button>
+    </div>
+
+    <script src="./dist/index.js"></script>
+    <script src="./scripts/chooseButton.js"></script>  
+    <script src="./scripts/script.js"></script>  
 </body>
+
 </html>
